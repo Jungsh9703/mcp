@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "oci-infrastructure": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/oci_mcp_server.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    },
+      "oci-infra-monitoring": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/oci_metrics_server.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    },
+      "oci-lb-health": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/health_check.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    },
+      "oci-tenancy-explorer": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/tenancy_explorer.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    },
+      "oci-instance-delete": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/instance_delete.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    },
+      "oci-flow-log": {
+      "command": "python",
+      "args": ["/Users/opc/oci-mcp/flow_log.py"],
+      "env": { "OCI_CONFIG_FILE": "/Users/opc/.oci/config" }
+    }
+
+  }
+}
